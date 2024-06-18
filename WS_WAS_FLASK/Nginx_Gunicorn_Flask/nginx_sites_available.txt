@@ -1,0 +1,10 @@
+(flask) root@DESKTOP-OAO2STE:~# cat /etc/nginx/sites-available/junginx_gunicorn.server
+server {
+        listen 80;
+        server_name localhost;
+
+        location / {
+                include proxy_params;
+                proxy_pass http://unix:/tmp/jungmin.sock;
+        }
+}
