@@ -1,0 +1,1178 @@
+[2024-06-18 21:59:54 +0900] [7618] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 21:59:54 +0900] [7618] [INFO] Listening at: http://0.0.0.0:5000 (7618)
+[2024-06-18 21:59:54 +0900] [7618] [INFO] Using worker: sync
+[2024-06-18 21:59:54 +0900] [7619] [INFO] Booting worker with pid: 7619
+[2024-06-18 21:59:54 +0900] [7620] [INFO] Booting worker with pid: 7620
+[2024-06-18 22:00:11 +0900] [7618] [INFO] Handling signal: winch
+[2024-06-18 22:00:13 +0900] [7618] [INFO] Handling signal: winch
+[2024-06-18 22:00:58 +0900] [7618] [CRITICAL] WORKER TIMEOUT (pid:7619)
+[2024-06-18 22:00:58 +0900] [7619] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    req = next(parser)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/http/parser.py", line 42, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/http/message.py", line 257, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/http/message.py", line 269, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/http/message.py", line 260, in get_data
+    data = unreader.read()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 203, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-06-18 22:00:58 +0900] [7619] [INFO] Worker exiting (pid: 7619)
+[2024-06-18 22:00:58 +0900] [7888] [INFO] Booting worker with pid: 7888
+[2024-06-18 22:01:52 +0900] [7618] [INFO] Handling signal: int
+[2024-06-18 22:01:52 +0900] [7620] [INFO] Worker exiting (pid: 7620)
+[2024-06-18 22:01:52 +0900] [7888] [INFO] Worker exiting (pid: 7888)
+[2024-06-18 22:01:52 +0900] [7618] [ERROR] Worker (pid:7888) was sent SIGINT!
+[2024-06-18 22:01:52 +0900] [7618] [ERROR] Worker (pid:7620) was sent SIGINT!
+[2024-06-18 22:01:52 +0900] [7618] [INFO] Shutting down: Master
+[2024-06-18 22:04:08 +0900] [8606] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:04:08 +0900] [8606] [INFO] Listening at: unix:/tmp/jungmin.sock (8606)
+[2024-06-18 22:04:08 +0900] [8606] [INFO] Using worker: sync
+[2024-06-18 22:04:08 +0900] [8610] [INFO] Booting worker with pid: 8610
+[2024-06-18 22:04:08 +0900] [8614] [INFO] Booting worker with pid: 8614
+[2024-06-18 22:04:08 +0900] [8615] [INFO] Booting worker with pid: 8615
+[2024-06-18 22:04:08 +0900] [8616] [INFO] Booting worker with pid: 8616
+[2024-06-18 22:04:08 +0900] [8617] [INFO] Booting worker with pid: 8617
+[2024-06-18 22:04:09 +0900] [8618] [INFO] Booting worker with pid: 8618
+[2024-06-18 22:04:09 +0900] [8619] [INFO] Booting worker with pid: 8619
+[2024-06-18 22:04:09 +0900] [8620] [INFO] Booting worker with pid: 8620
+[2024-06-18 22:04:09 +0900] [8621] [INFO] Booting worker with pid: 8621
+[2024-06-18 22:04:09 +0900] [8622] [INFO] Booting worker with pid: 8622
+[2024-06-18 22:04:09 +0900] [8623] [INFO] Booting worker with pid: 8623
+[2024-06-18 22:04:09 +0900] [8624] [INFO] Booting worker with pid: 8624
+[2024-06-18 22:04:09 +0900] [8625] [INFO] Booting worker with pid: 8625
+[2024-06-18 22:04:09 +0900] [8635] [INFO] Booting worker with pid: 8635
+[2024-06-18 22:04:09 +0900] [8650] [INFO] Booting worker with pid: 8650
+[2024-06-18 22:04:09 +0900] [8655] [INFO] Booting worker with pid: 8655
+[2024-06-18 22:04:09 +0900] [8656] [INFO] Booting worker with pid: 8656
+[2024-06-18 22:04:54 +0900] [8606] [INFO] Handling signal: int
+[2024-06-18 22:04:54 +0900] [8610] [INFO] Worker exiting (pid: 8610)
+[2024-06-18 22:04:54 +0900] [8615] [INFO] Worker exiting (pid: 8615)
+[2024-06-18 22:04:54 +0900] [8619] [INFO] Worker exiting (pid: 8619)
+[2024-06-18 22:04:54 +0900] [8614] [INFO] Worker exiting (pid: 8614)
+[2024-06-18 22:04:54 +0900] [8621] [INFO] Worker exiting (pid: 8621)
+[2024-06-18 22:04:54 +0900] [8617] [INFO] Worker exiting (pid: 8617)
+[2024-06-18 22:04:54 +0900] [8625] [INFO] Worker exiting (pid: 8625)
+[2024-06-18 22:04:54 +0900] [8616] [INFO] Worker exiting (pid: 8616)
+[2024-06-18 22:04:54 +0900] [8650] [INFO] Worker exiting (pid: 8650)
+[2024-06-18 22:04:54 +0900] [8624] [INFO] Worker exiting (pid: 8624)
+[2024-06-18 22:04:54 +0900] [8620] [INFO] Worker exiting (pid: 8620)
+[2024-06-18 22:04:54 +0900] [8622] [INFO] Worker exiting (pid: 8622)
+[2024-06-18 22:04:54 +0900] [8656] [INFO] Worker exiting (pid: 8656)
+[2024-06-18 22:04:54 +0900] [8618] [INFO] Worker exiting (pid: 8618)
+[2024-06-18 22:04:54 +0900] [8655] [INFO] Worker exiting (pid: 8655)
+[2024-06-18 22:04:54 +0900] [8623] [INFO] Worker exiting (pid: 8623)
+[2024-06-18 22:04:54 +0900] [8635] [INFO] Worker exiting (pid: 8635)
+[2024-06-18 22:04:55 +0900] [8606] [INFO] Shutting down: Master
+[2024-06-18 22:07:55 +0900] [10449] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:07:55 +0900] [10449] [INFO] Listening at: unix:/tmp/jungmin.sock (10449)
+[2024-06-18 22:07:55 +0900] [10449] [INFO] Using worker: sync
+[2024-06-18 22:07:55 +0900] [10450] [INFO] Booting worker with pid: 10450
+[2024-06-18 22:07:55 +0900] [10451] [INFO] Booting worker with pid: 10451
+[2024-06-18 22:07:55 +0900] [10452] [INFO] Booting worker with pid: 10452
+[2024-06-18 22:07:55 +0900] [10453] [INFO] Booting worker with pid: 10453
+[2024-06-18 22:07:55 +0900] [10456] [INFO] Booting worker with pid: 10456
+[2024-06-18 22:07:55 +0900] [10461] [INFO] Booting worker with pid: 10461
+[2024-06-18 22:07:55 +0900] [10459] [INFO] Booting worker with pid: 10459
+[2024-06-18 22:07:55 +0900] [10468] [INFO] Booting worker with pid: 10468
+[2024-06-18 22:07:55 +0900] [10469] [INFO] Booting worker with pid: 10469
+[2024-06-18 22:07:55 +0900] [10470] [INFO] Booting worker with pid: 10470
+[2024-06-18 22:07:55 +0900] [10471] [INFO] Booting worker with pid: 10471
+[2024-06-18 22:07:55 +0900] [10472] [INFO] Booting worker with pid: 10472
+[2024-06-18 22:07:55 +0900] [10473] [INFO] Booting worker with pid: 10473
+[2024-06-18 22:07:55 +0900] [10474] [INFO] Booting worker with pid: 10474
+[2024-06-18 22:07:55 +0900] [10475] [INFO] Booting worker with pid: 10475
+[2024-06-18 22:07:55 +0900] [10476] [INFO] Booting worker with pid: 10476
+[2024-06-18 22:07:55 +0900] [10477] [INFO] Booting worker with pid: 10477
+[2024-06-18 22:09:09 +0900] [10449] [INFO] Handling signal: int
+[2024-06-18 22:09:09 +0900] [10469] [INFO] Worker exiting (pid: 10469)
+[2024-06-18 22:09:09 +0900] [10470] [INFO] Worker exiting (pid: 10470)
+[2024-06-18 22:09:10 +0900] [10473] [INFO] Worker exiting (pid: 10473)
+[2024-06-18 22:09:10 +0900] [10461] [INFO] Worker exiting (pid: 10461)
+[2024-06-18 22:09:10 +0900] [10474] [INFO] Worker exiting (pid: 10474)
+[2024-06-18 22:09:10 +0900] [10476] [INFO] Worker exiting (pid: 10476)
+[2024-06-18 22:09:10 +0900] [10475] [INFO] Worker exiting (pid: 10475)
+[2024-06-18 22:09:10 +0900] [10459] [INFO] Worker exiting (pid: 10459)
+[2024-06-18 22:09:10 +0900] [10472] [INFO] Worker exiting (pid: 10472)
+[2024-06-18 22:09:10 +0900] [10471] [INFO] Worker exiting (pid: 10471)
+[2024-06-18 22:09:10 +0900] [10477] [INFO] Worker exiting (pid: 10477)
+[2024-06-18 22:09:10 +0900] [10451] [INFO] Worker exiting (pid: 10451)
+[2024-06-18 22:09:10 +0900] [10450] [INFO] Worker exiting (pid: 10450)
+[2024-06-18 22:09:10 +0900] [10468] [INFO] Worker exiting (pid: 10468)
+[2024-06-18 22:09:10 +0900] [10456] [INFO] Worker exiting (pid: 10456)
+[2024-06-18 22:09:10 +0900] [10453] [INFO] Worker exiting (pid: 10453)
+[2024-06-18 22:09:10 +0900] [10452] [INFO] Worker exiting (pid: 10452)
+[2024-06-18 22:09:10 +0900] [10449] [INFO] Shutting down: Master
+[2024-06-18 22:10:42 +0900] [11467] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:10:42 +0900] [11467] [INFO] Listening at: unix:/tmp/jungmin.sock (11467)
+[2024-06-18 22:10:42 +0900] [11467] [INFO] Using worker: sync
+[2024-06-18 22:10:42 +0900] [11468] [INFO] Booting worker with pid: 11468
+[2024-06-18 22:10:42 +0900] [11469] [INFO] Booting worker with pid: 11469
+[2024-06-18 22:10:42 +0900] [11470] [INFO] Booting worker with pid: 11470
+[2024-06-18 22:10:42 +0900] [11471] [INFO] Booting worker with pid: 11471
+[2024-06-18 22:10:42 +0900] [11472] [INFO] Booting worker with pid: 11472
+[2024-06-18 22:10:42 +0900] [11473] [INFO] Booting worker with pid: 11473
+[2024-06-18 22:10:42 +0900] [11474] [INFO] Booting worker with pid: 11474
+[2024-06-18 22:10:42 +0900] [11475] [INFO] Booting worker with pid: 11475
+[2024-06-18 22:10:42 +0900] [11477] [INFO] Booting worker with pid: 11477
+[2024-06-18 22:10:42 +0900] [11476] [INFO] Booting worker with pid: 11476
+[2024-06-18 22:10:42 +0900] [11478] [INFO] Booting worker with pid: 11478
+[2024-06-18 22:10:42 +0900] [11479] [INFO] Booting worker with pid: 11479
+[2024-06-18 22:10:43 +0900] [11480] [INFO] Booting worker with pid: 11480
+[2024-06-18 22:10:43 +0900] [11481] [INFO] Booting worker with pid: 11481
+[2024-06-18 22:10:43 +0900] [11482] [INFO] Booting worker with pid: 11482
+[2024-06-18 22:10:43 +0900] [11483] [INFO] Booting worker with pid: 11483
+[2024-06-18 22:10:43 +0900] [11484] [INFO] Booting worker with pid: 11484
+[2024-06-18 22:33:04 +0900] [11478] [INFO] Worker exiting (pid: 11478)
+[2024-06-18 22:33:04 +0900] [11480] [INFO] Worker exiting (pid: 11480)
+[2024-06-18 22:33:04 +0900] [11474] [INFO] Worker exiting (pid: 11474)
+[2024-06-18 22:33:04 +0900] [11471] [INFO] Worker exiting (pid: 11471)
+[2024-06-18 22:33:04 +0900] [11483] [INFO] Worker exiting (pid: 11483)
+[2024-06-18 22:33:04 +0900] [11477] [INFO] Worker exiting (pid: 11477)
+[2024-06-18 22:33:04 +0900] [11482] [INFO] Worker exiting (pid: 11482)
+[2024-06-18 22:33:04 +0900] [11473] [INFO] Worker exiting (pid: 11473)
+[2024-06-18 22:33:04 +0900] [11472] [INFO] Worker exiting (pid: 11472)
+[2024-06-18 22:33:04 +0900] [11475] [INFO] Worker exiting (pid: 11475)
+[2024-06-18 22:33:04 +0900] [11479] [INFO] Worker exiting (pid: 11479)
+[2024-06-18 22:33:04 +0900] [11481] [INFO] Worker exiting (pid: 11481)
+[2024-06-18 22:33:04 +0900] [11470] [INFO] Worker exiting (pid: 11470)
+[2024-06-18 22:33:04 +0900] [11484] [INFO] Worker exiting (pid: 11484)
+[2024-06-18 22:33:04 +0900] [11476] [INFO] Worker exiting (pid: 11476)
+[2024-06-18 22:33:04 +0900] [11467] [INFO] Handling signal: int
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11471) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11473) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11475) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11476) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11477) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11478) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11479) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11480) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11481) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11482) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11483) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11484) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11474) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11470) was sent SIGQUIT!
+[2024-06-18 22:33:04 +0900] [11467] [ERROR] Worker (pid:11472) was sent SIGQUIT!
+[2024-06-18 22:33:05 +0900] [11467] [ERROR] Worker (pid:11468) was sent SIGINT!
+[2024-06-18 22:33:05 +0900] [11467] [ERROR] Worker (pid:11469) was sent SIGINT!
+[2024-06-18 22:33:05 +0900] [11467] [INFO] Shutting down: Master
+[2024-06-18 22:47:31 +0900] [19321] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:47:31 +0900] [19321] [INFO] Listening at: unix:/tmp/jungmin.sock (19321)
+[2024-06-18 22:47:31 +0900] [19321] [INFO] Using worker: sync
+[2024-06-18 22:47:31 +0900] [19322] [INFO] Booting worker with pid: 19322
+[2024-06-18 22:47:31 +0900] [19322] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 22:47:31 +0900] [19322] [INFO] Worker exiting (pid: 19322)
+[2024-06-18 22:47:31 +0900] [19321] [ERROR] Worker (pid:19322) exited with code 3
+[2024-06-18 22:47:31 +0900] [19321] [ERROR] Shutting down: Master
+[2024-06-18 22:47:31 +0900] [19321] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 22:48:53 +0900] [19671] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:48:53 +0900] [19671] [INFO] Listening at: unix:/tmp/jungmin.sock (19671)
+[2024-06-18 22:48:53 +0900] [19671] [INFO] Using worker: sync
+[2024-06-18 22:48:53 +0900] [19678] [INFO] Booting worker with pid: 19678
+[2024-06-18 22:48:53 +0900] [19678] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 22:48:53 +0900] [19678] [INFO] Worker exiting (pid: 19678)
+[2024-06-18 22:48:54 +0900] [19671] [ERROR] Worker (pid:19678) exited with code 3
+[2024-06-18 22:48:54 +0900] [19671] [ERROR] Shutting down: Master
+[2024-06-18 22:48:54 +0900] [19671] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 22:50:31 +0900] [20111] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:50:31 +0900] [20111] [INFO] Listening at: unix:/tmp/jungmin.sock (20111)
+[2024-06-18 22:50:31 +0900] [20111] [INFO] Using worker: sync
+[2024-06-18 22:50:31 +0900] [20112] [INFO] Booting worker with pid: 20112
+[2024-06-18 22:50:31 +0900] [20112] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'wsgi'
+[2024-06-18 22:50:31 +0900] [20112] [INFO] Worker exiting (pid: 20112)
+[2024-06-18 22:50:31 +0900] [20113] [INFO] Booting worker with pid: 20113
+[2024-06-18 22:50:31 +0900] [20113] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'wsgi'
+[2024-06-18 22:50:31 +0900] [20113] [INFO] Worker exiting (pid: 20113)
+[2024-06-18 22:50:31 +0900] [20111] [ERROR] Worker (pid:20112) exited with code 3
+[2024-06-18 22:50:31 +0900] [20111] [ERROR] Worker (pid:20113) was sent SIGTERM!
+[2024-06-18 22:50:31 +0900] [20111] [ERROR] Shutting down: Master
+[2024-06-18 22:50:31 +0900] [20111] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 22:50:56 +0900] [20291] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:50:56 +0900] [20291] [INFO] Listening at: unix:/tmp/jungmin.sock (20291)
+[2024-06-18 22:50:56 +0900] [20291] [INFO] Using worker: sync
+[2024-06-18 22:50:56 +0900] [20292] [INFO] Booting worker with pid: 20292
+[2024-06-18 22:50:56 +0900] [20292] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 22:50:56 +0900] [20292] [INFO] Worker exiting (pid: 20292)
+[2024-06-18 22:50:56 +0900] [20291] [ERROR] Worker (pid:20292) exited with code 3
+[2024-06-18 22:50:56 +0900] [20291] [ERROR] Shutting down: Master
+[2024-06-18 22:50:56 +0900] [20291] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 22:54:09 +0900] [21214] [DEBUG] Current configuration:
+  config: /home/min/gunicorn.config.socket.py
+  wsgi_app: nginx_study:create_app()
+  bind: ['unix:/tmp/jungmin.sock']
+  backlog: 2048
+  workers: 17
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /etc/systemd/system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/min/gunicorn_log/accesslog.txt
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/min/gunicorn_log/errorlog.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: nginx_study:create_app()
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9cc3556200>
+  on_reload: <function OnReload.on_reload at 0x7f9cc3556320>
+  when_ready: <function WhenReady.when_ready at 0x7f9cc3556440>
+  pre_fork: <function Prefork.pre_fork at 0x7f9cc3556560>
+  post_fork: <function Postfork.post_fork at 0x7f9cc3556680>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9cc35567a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f9cc35568c0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9cc35569e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f9cc3556b00>
+  pre_request: <function PreRequest.pre_request at 0x7f9cc3556c20>
+  post_request: <function PostRequest.post_request at 0x7f9cc3556cb0>
+  child_exit: <function ChildExit.child_exit at 0x7f9cc3556dd0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9cc3556ef0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9cc3557010>
+  on_exit: <function OnExit.on_exit at 0x7f9cc3557130>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f9cc3557250>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-06-18 22:54:09 +0900] [21214] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:54:09 +0900] [21214] [DEBUG] Arbiter booted
+[2024-06-18 22:54:09 +0900] [21214] [INFO] Listening at: unix:/tmp/jungmin.sock (21214)
+[2024-06-18 22:54:09 +0900] [21214] [INFO] Using worker: sync
+[2024-06-18 22:54:09 +0900] [21215] [INFO] Booting worker with pid: 21215
+[2024-06-18 22:54:09 +0900] [21215] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 22:54:09 +0900] [21215] [INFO] Worker exiting (pid: 21215)
+[2024-06-18 22:54:09 +0900] [21214] [ERROR] Worker (pid:21215) exited with code 3
+[2024-06-18 22:54:09 +0900] [21214] [ERROR] Shutting down: Master
+[2024-06-18 22:54:09 +0900] [21214] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 22:54:53 +0900] [21567] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:54:53 +0900] [21567] [INFO] Listening at: unix:/tmp/jungmin.sock (21567)
+[2024-06-18 22:54:53 +0900] [21567] [INFO] Using worker: sync
+[2024-06-18 22:54:53 +0900] [21568] [INFO] Booting worker with pid: 21568
+[2024-06-18 22:54:53 +0900] [21568] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 22:54:53 +0900] [21568] [INFO] Worker exiting (pid: 21568)
+[2024-06-18 22:54:53 +0900] [21567] [ERROR] Worker (pid:21568) exited with code 3
+[2024-06-18 22:54:53 +0900] [21567] [ERROR] Shutting down: Master
+[2024-06-18 22:54:53 +0900] [21567] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 22:56:00 +0900] [21826] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:56:00 +0900] [21826] [INFO] Listening at: unix:/tmp/jungmin.sock (21826)
+[2024-06-18 22:56:00 +0900] [21826] [INFO] Using worker: sync
+[2024-06-18 22:56:00 +0900] [21827] [INFO] Booting worker with pid: 21827
+[2024-06-18 22:56:00 +0900] [21827] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 22:56:00 +0900] [21827] [INFO] Worker exiting (pid: 21827)
+[2024-06-18 22:56:00 +0900] [21826] [ERROR] Worker (pid:21827) exited with code 3
+[2024-06-18 22:56:00 +0900] [21826] [ERROR] Shutting down: Master
+[2024-06-18 22:56:00 +0900] [21826] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 22:56:45 +0900] [22158] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:56:45 +0900] [22158] [INFO] Listening at: unix:/tmp/jungmin.sock (22158)
+[2024-06-18 22:56:45 +0900] [22158] [INFO] Using worker: sync
+[2024-06-18 22:56:45 +0900] [22159] [INFO] Booting worker with pid: 22159
+[2024-06-18 22:56:45 +0900] [22159] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 22:56:45 +0900] [22159] [INFO] Worker exiting (pid: 22159)
+[2024-06-18 22:56:45 +0900] [22160] [INFO] Booting worker with pid: 22160
+[2024-06-18 22:56:45 +0900] [22160] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 22:56:45 +0900] [22160] [INFO] Worker exiting (pid: 22160)
+[2024-06-18 22:56:45 +0900] [22158] [ERROR] Worker (pid:22159) exited with code 3
+[2024-06-18 22:56:45 +0900] [22158] [ERROR] Worker (pid:22160) was sent SIGTERM!
+[2024-06-18 22:56:45 +0900] [22158] [ERROR] Shutting down: Master
+[2024-06-18 22:56:45 +0900] [22158] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 22:58:14 +0900] [22528] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 22:58:14 +0900] [22528] [INFO] Listening at: unix:/tmp/jungmin.sock (22528)
+[2024-06-18 22:58:14 +0900] [22528] [INFO] Using worker: sync
+[2024-06-18 22:58:14 +0900] [22529] [INFO] Booting worker with pid: 22529
+[2024-06-18 22:58:14 +0900] [22530] [INFO] Booting worker with pid: 22530
+[2024-06-18 22:58:14 +0900] [22531] [INFO] Booting worker with pid: 22531
+[2024-06-18 22:58:14 +0900] [22532] [INFO] Booting worker with pid: 22532
+[2024-06-18 22:58:14 +0900] [22533] [INFO] Booting worker with pid: 22533
+[2024-06-18 22:58:14 +0900] [22534] [INFO] Booting worker with pid: 22534
+[2024-06-18 22:58:14 +0900] [22535] [INFO] Booting worker with pid: 22535
+[2024-06-18 22:58:14 +0900] [22536] [INFO] Booting worker with pid: 22536
+[2024-06-18 22:58:15 +0900] [22537] [INFO] Booting worker with pid: 22537
+[2024-06-18 22:58:15 +0900] [22538] [INFO] Booting worker with pid: 22538
+[2024-06-18 22:58:15 +0900] [22539] [INFO] Booting worker with pid: 22539
+[2024-06-18 22:58:15 +0900] [22540] [INFO] Booting worker with pid: 22540
+[2024-06-18 22:58:15 +0900] [22541] [INFO] Booting worker with pid: 22541
+[2024-06-18 22:58:15 +0900] [22542] [INFO] Booting worker with pid: 22542
+[2024-06-18 22:58:15 +0900] [22554] [INFO] Booting worker with pid: 22554
+[2024-06-18 22:58:15 +0900] [22558] [INFO] Booting worker with pid: 22558
+[2024-06-18 22:58:15 +0900] [22562] [INFO] Booting worker with pid: 22562
+[2024-06-18 22:58:27 +0900] [22528] [INFO] Handling signal: int
+[2024-06-18 22:58:27 +0900] [22535] [INFO] Worker exiting (pid: 22535)
+[2024-06-18 22:58:27 +0900] [22531] [INFO] Worker exiting (pid: 22531)
+[2024-06-18 22:58:27 +0900] [22530] [INFO] Worker exiting (pid: 22530)
+[2024-06-18 22:58:27 +0900] [22529] [INFO] Worker exiting (pid: 22529)
+[2024-06-18 22:58:27 +0900] [22534] [INFO] Worker exiting (pid: 22534)
+[2024-06-18 22:58:27 +0900] [22533] [INFO] Worker exiting (pid: 22533)
+[2024-06-18 22:58:27 +0900] [22532] [INFO] Worker exiting (pid: 22532)
+[2024-06-18 22:58:27 +0900] [22537] [INFO] Worker exiting (pid: 22537)
+[2024-06-18 22:58:27 +0900] [22540] [INFO] Worker exiting (pid: 22540)
+[2024-06-18 22:58:27 +0900] [22554] [INFO] Worker exiting (pid: 22554)
+[2024-06-18 22:58:27 +0900] [22542] [INFO] Worker exiting (pid: 22542)
+[2024-06-18 22:58:27 +0900] [22539] [INFO] Worker exiting (pid: 22539)
+[2024-06-18 22:58:27 +0900] [22538] [INFO] Worker exiting (pid: 22538)
+[2024-06-18 22:58:27 +0900] [22558] [INFO] Worker exiting (pid: 22558)
+[2024-06-18 22:58:27 +0900] [22541] [INFO] Worker exiting (pid: 22541)
+[2024-06-18 22:58:27 +0900] [22536] [INFO] Worker exiting (pid: 22536)
+[2024-06-18 22:58:27 +0900] [22562] [INFO] Worker exiting (pid: 22562)
+[2024-06-18 22:58:27 +0900] [22528] [INFO] Shutting down: Master
+[2024-06-18 23:01:31 +0900] [24108] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:01:31 +0900] [24108] [INFO] Listening at: unix:/tmp/jungmin.sock (24108)
+[2024-06-18 23:01:31 +0900] [24108] [INFO] Using worker: sync
+[2024-06-18 23:01:31 +0900] [24109] [INFO] Booting worker with pid: 24109
+[2024-06-18 23:01:31 +0900] [24109] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:01:31 +0900] [24109] [INFO] Worker exiting (pid: 24109)
+[2024-06-18 23:01:31 +0900] [24108] [ERROR] Worker (pid:24109) exited with code 3
+[2024-06-18 23:01:31 +0900] [24108] [ERROR] Shutting down: Master
+[2024-06-18 23:01:31 +0900] [24108] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 23:01:50 +0900] [24268] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:01:50 +0900] [24268] [INFO] Listening at: unix:/tmp/jungmin.sock (24268)
+[2024-06-18 23:01:50 +0900] [24268] [INFO] Using worker: sync
+[2024-06-18 23:01:50 +0900] [24269] [INFO] Booting worker with pid: 24269
+[2024-06-18 23:01:50 +0900] [24269] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:01:50 +0900] [24269] [INFO] Worker exiting (pid: 24269)
+[2024-06-18 23:01:50 +0900] [24268] [ERROR] Worker (pid:24269) exited with code 3
+[2024-06-18 23:01:50 +0900] [24268] [ERROR] Shutting down: Master
+[2024-06-18 23:01:50 +0900] [24268] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 23:02:36 +0900] [24478] [DEBUG] Current configuration:
+  config: /home/min/gunicorn.config.socket.py
+  wsgi_app: nginx_study:create_app()
+  bind: ['unix:/tmp/jungmin.sock']
+  backlog: 2048
+  workers: 17
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /etc/systemd/system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/min/gunicorn_log/accesslog.txt
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/min/gunicorn_log/errorlog.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: nginx_study:create_app()
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f505b1aa200>
+  on_reload: <function OnReload.on_reload at 0x7f505b1aa320>
+  when_ready: <function WhenReady.when_ready at 0x7f505b1aa440>
+  pre_fork: <function Prefork.pre_fork at 0x7f505b1aa560>
+  post_fork: <function Postfork.post_fork at 0x7f505b1aa680>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f505b1aa7a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f505b1aa8c0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f505b1aa9e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f505b1aab00>
+  pre_request: <function PreRequest.pre_request at 0x7f505b1aac20>
+  post_request: <function PostRequest.post_request at 0x7f505b1aacb0>
+  child_exit: <function ChildExit.child_exit at 0x7f505b1aadd0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f505b1aaef0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f505b1ab010>
+  on_exit: <function OnExit.on_exit at 0x7f505b1ab130>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f505b1ab250>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-06-18 23:02:36 +0900] [24478] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:02:36 +0900] [24478] [DEBUG] Arbiter booted
+[2024-06-18 23:02:36 +0900] [24478] [INFO] Listening at: unix:/tmp/jungmin.sock (24478)
+[2024-06-18 23:02:36 +0900] [24478] [INFO] Using worker: sync
+[2024-06-18 23:02:36 +0900] [24479] [INFO] Booting worker with pid: 24479
+[2024-06-18 23:02:36 +0900] [24479] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:02:36 +0900] [24479] [INFO] Worker exiting (pid: 24479)
+[2024-06-18 23:02:36 +0900] [24478] [ERROR] Worker (pid:24479) exited with code 3
+[2024-06-18 23:02:36 +0900] [24478] [ERROR] Shutting down: Master
+[2024-06-18 23:02:36 +0900] [24478] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 23:02:47 +0900] [24565] [DEBUG] Current configuration:
+  config: /home/min/gunicorn.config.socket.py
+  wsgi_app: nginx_study:create_app()
+  bind: ['unix:/tmp/jungmin.sock']
+  backlog: 2048
+  workers: 17
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /etc/systemd/system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/min/gunicorn_log/accesslog.txt
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/min/gunicorn_log/errorlog.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gunicorn
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fba86a92200>
+  on_reload: <function OnReload.on_reload at 0x7fba86a92320>
+  when_ready: <function WhenReady.when_ready at 0x7fba86a92440>
+  pre_fork: <function Prefork.pre_fork at 0x7fba86a92560>
+  post_fork: <function Postfork.post_fork at 0x7fba86a92680>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fba86a927a0>
+  worker_int: <function WorkerInt.worker_int at 0x7fba86a928c0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fba86a929e0>
+  pre_exec: <function PreExec.pre_exec at 0x7fba86a92b00>
+  pre_request: <function PreRequest.pre_request at 0x7fba86a92c20>
+  post_request: <function PostRequest.post_request at 0x7fba86a92cb0>
+  child_exit: <function ChildExit.child_exit at 0x7fba86a92dd0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fba86a92ef0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fba86a93010>
+  on_exit: <function OnExit.on_exit at 0x7fba86a93130>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fba86a93250>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-06-18 23:02:47 +0900] [24565] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:02:47 +0900] [24565] [DEBUG] Arbiter booted
+[2024-06-18 23:02:47 +0900] [24565] [INFO] Listening at: unix:/tmp/jungmin.sock (24565)
+[2024-06-18 23:02:47 +0900] [24565] [INFO] Using worker: sync
+[2024-06-18 23:02:47 +0900] [24566] [INFO] Booting worker with pid: 24566
+[2024-06-18 23:02:47 +0900] [24566] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:02:47 +0900] [24566] [INFO] Worker exiting (pid: 24566)
+[2024-06-18 23:02:47 +0900] [24565] [ERROR] Worker (pid:24566) exited with code 3
+[2024-06-18 23:02:47 +0900] [24565] [ERROR] Shutting down: Master
+[2024-06-18 23:02:47 +0900] [24565] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 23:02:58 +0900] [24645] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:02:58 +0900] [24645] [INFO] Listening at: unix:/tmp/jungmin.sock (24645)
+[2024-06-18 23:02:58 +0900] [24645] [INFO] Using worker: sync
+[2024-06-18 23:02:58 +0900] [24646] [INFO] Booting worker with pid: 24646
+[2024-06-18 23:02:58 +0900] [24646] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:02:58 +0900] [24646] [INFO] Worker exiting (pid: 24646)
+[2024-06-18 23:02:58 +0900] [24647] [INFO] Booting worker with pid: 24647
+[2024-06-18 23:02:58 +0900] [24647] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:02:58 +0900] [24647] [INFO] Worker exiting (pid: 24647)
+[2024-06-18 23:02:58 +0900] [24645] [ERROR] Worker (pid:24646) exited with code 3
+[2024-06-18 23:02:58 +0900] [24645] [ERROR] Worker (pid:24647) was sent SIGTERM!
+[2024-06-18 23:02:58 +0900] [24645] [ERROR] Shutting down: Master
+[2024-06-18 23:02:58 +0900] [24645] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 23:04:33 +0900] [25049] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:04:33 +0900] [25049] [INFO] Listening at: unix:/tmp/jungmin.sock (25049)
+[2024-06-18 23:04:33 +0900] [25049] [INFO] Using worker: sync
+[2024-06-18 23:04:33 +0900] [25056] [INFO] Booting worker with pid: 25056
+[2024-06-18 23:04:33 +0900] [25056] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:04:33 +0900] [25056] [INFO] Worker exiting (pid: 25056)
+[2024-06-18 23:04:33 +0900] [25049] [ERROR] Worker (pid:25056) exited with code 3
+[2024-06-18 23:04:33 +0900] [25049] [ERROR] Shutting down: Master
+[2024-06-18 23:04:33 +0900] [25049] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 23:04:44 +0900] [25135] [DEBUG] Current configuration:
+  config: /home/min/gunicorn.config.socket.py
+  wsgi_app: None
+  bind: ['unix:/tmp/jungmin.sock']
+  backlog: 2048
+  workers: 17
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /etc/systemd/system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/min/gunicorn_log/accesslog.txt
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/min/gunicorn_log/errorlog.txt
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: nginx_study:create_app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7f8664e200>
+  on_reload: <function OnReload.on_reload at 0x7f7f8664e320>
+  when_ready: <function WhenReady.when_ready at 0x7f7f8664e440>
+  pre_fork: <function Prefork.pre_fork at 0x7f7f8664e560>
+  post_fork: <function Postfork.post_fork at 0x7f7f8664e680>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f7f8664e7a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f7f8664e8c0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f7f8664e9e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f7f8664eb00>
+  pre_request: <function PreRequest.pre_request at 0x7f7f8664ec20>
+  post_request: <function PostRequest.post_request at 0x7f7f8664ecb0>
+  child_exit: <function ChildExit.child_exit at 0x7f7f8664edd0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7f8664eef0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f7f8664f010>
+  on_exit: <function OnExit.on_exit at 0x7f7f8664f130>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f7f8664f250>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-06-18 23:04:44 +0900] [25135] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:04:44 +0900] [25135] [DEBUG] Arbiter booted
+[2024-06-18 23:04:44 +0900] [25135] [INFO] Listening at: unix:/tmp/jungmin.sock (25135)
+[2024-06-18 23:04:44 +0900] [25135] [INFO] Using worker: sync
+[2024-06-18 23:04:44 +0900] [25136] [INFO] Booting worker with pid: 25136
+[2024-06-18 23:04:44 +0900] [25136] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:04:44 +0900] [25136] [INFO] Worker exiting (pid: 25136)
+[2024-06-18 23:04:44 +0900] [25135] [ERROR] Worker (pid:25136) exited with code 3
+[2024-06-18 23:04:44 +0900] [25135] [ERROR] Shutting down: Master
+[2024-06-18 23:04:44 +0900] [25135] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 23:04:53 +0900] [25210] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:04:53 +0900] [25210] [INFO] Listening at: unix:/tmp/jungmin.sock (25210)
+[2024-06-18 23:04:53 +0900] [25210] [INFO] Using worker: sync
+[2024-06-18 23:04:53 +0900] [25211] [INFO] Booting worker with pid: 25211
+[2024-06-18 23:04:53 +0900] [25211] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/miniconda3/envs/flask/lib/python3.10/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/root/miniconda3/envs/flask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nginx_study'
+[2024-06-18 23:04:53 +0900] [25211] [INFO] Worker exiting (pid: 25211)
+[2024-06-18 23:04:53 +0900] [25210] [ERROR] Worker (pid:25211) exited with code 3
+[2024-06-18 23:04:53 +0900] [25210] [ERROR] Shutting down: Master
+[2024-06-18 23:04:53 +0900] [25210] [ERROR] Reason: Worker failed to boot.
+[2024-06-18 23:14:57 +0900] [29223] [INFO] Starting gunicorn 22.0.0
+[2024-06-18 23:14:57 +0900] [29223] [INFO] Listening at: unix:/tmp/jungmin.sock (29223)
+[2024-06-18 23:14:57 +0900] [29223] [INFO] Using worker: sync
+[2024-06-18 23:14:57 +0900] [29224] [INFO] Booting worker with pid: 29224
+[2024-06-18 23:14:57 +0900] [29225] [INFO] Booting worker with pid: 29225
+[2024-06-18 23:14:57 +0900] [29226] [INFO] Booting worker with pid: 29226
+[2024-06-18 23:14:57 +0900] [29227] [INFO] Booting worker with pid: 29227
+[2024-06-18 23:14:57 +0900] [29228] [INFO] Booting worker with pid: 29228
+[2024-06-18 23:14:57 +0900] [29229] [INFO] Booting worker with pid: 29229
+[2024-06-18 23:14:57 +0900] [29230] [INFO] Booting worker with pid: 29230
+[2024-06-18 23:14:57 +0900] [29231] [INFO] Booting worker with pid: 29231
+[2024-06-18 23:14:57 +0900] [29232] [INFO] Booting worker with pid: 29232
+[2024-06-18 23:14:57 +0900] [29233] [INFO] Booting worker with pid: 29233
+[2024-06-18 23:14:57 +0900] [29234] [INFO] Booting worker with pid: 29234
+[2024-06-18 23:14:57 +0900] [29235] [INFO] Booting worker with pid: 29235
+[2024-06-18 23:14:58 +0900] [29236] [INFO] Booting worker with pid: 29236
+[2024-06-18 23:14:58 +0900] [29237] [INFO] Booting worker with pid: 29237
+[2024-06-18 23:14:58 +0900] [29238] [INFO] Booting worker with pid: 29238
+[2024-06-18 23:14:58 +0900] [29239] [INFO] Booting worker with pid: 29239
+[2024-06-18 23:14:58 +0900] [29240] [INFO] Booting worker with pid: 29240
+[2024-06-18 23:15:13 +0900] [29223] [INFO] Handling signal: int
+[2024-06-18 23:15:13 +0900] [29229] [INFO] Worker exiting (pid: 29229)
+[2024-06-18 23:15:13 +0900] [29234] [INFO] Worker exiting (pid: 29234)
+[2024-06-18 23:15:13 +0900] [29228] [INFO] Worker exiting (pid: 29228)
+[2024-06-18 23:15:13 +0900] [29224] [INFO] Worker exiting (pid: 29224)
+[2024-06-18 23:15:13 +0900] [29225] [INFO] Worker exiting (pid: 29225)
+[2024-06-18 23:15:13 +0900] [29232] [INFO] Worker exiting (pid: 29232)
+[2024-06-18 23:15:13 +0900] [29227] [INFO] Worker exiting (pid: 29227)
+[2024-06-18 23:15:13 +0900] [29226] [INFO] Worker exiting (pid: 29226)
+[2024-06-18 23:15:13 +0900] [29235] [INFO] Worker exiting (pid: 29235)
+[2024-06-18 23:15:13 +0900] [29238] [INFO] Worker exiting (pid: 29238)
+[2024-06-18 23:15:13 +0900] [29236] [INFO] Worker exiting (pid: 29236)
+[2024-06-18 23:15:13 +0900] [29237] [INFO] Worker exiting (pid: 29237)
+[2024-06-18 23:15:13 +0900] [29233] [INFO] Worker exiting (pid: 29233)
+[2024-06-18 23:15:13 +0900] [29240] [INFO] Worker exiting (pid: 29240)
+[2024-06-18 23:15:13 +0900] [29231] [INFO] Worker exiting (pid: 29231)
+[2024-06-18 23:15:13 +0900] [29230] [INFO] Worker exiting (pid: 29230)
+[2024-06-18 23:15:13 +0900] [29239] [INFO] Worker exiting (pid: 29239)
+[2024-06-18 23:15:13 +0900] [29223] [INFO] Shutting down: Master
