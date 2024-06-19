@@ -4,4 +4,14 @@
 
 * MLOps 공부 내용입니다!
 
+# 📅MLOps 공부 기록
+
+### ✔️ 수행 기간
+- 2024.06.13 ~ ing
+
+### ✔️ 세부 진행 기록
+
+🔹 MLops 프로젝트 투입 전
+- 24-06-13 ~ 24-06-16 : Nginx - uWSGI - Flask 연동 웹 서버 구축
+- 24-06-16 ~ 24-06-18 : Nginx - Gunicorn - Flask 연동 웹 서버 구축
 📒 참고 강의 : https://www.youtube.com/watch?v=I9UCdp9ucQQ&list=PLRUS1nW-Cfnffl6oa8u1jzgiOyeTY_cCA&index=2
