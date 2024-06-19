@@ -1,0 +1,122 @@
+*** Starting uWSGI 2.0.26 (64bit) on [Tue Jun 18 16:25:27 2024] ***
+compiled with version: 11.4.0 on 18 June 2024 04:51:27
+os: Linux-5.15.146.1-microsoft-standard-WSL2 #1 SMP Thu Jan 11 04:09:03 UTC 2024
+nodename: DESKTOP-OI1648D
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /home/min/nginx_study
+writing pidfile to ./uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31208
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/jungmin.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+Set PythonHome to /root/miniconda3/envs/flask
+Python main interpreter initialized at 0x5624d7c682a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 333504 bytes (325 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5624d7c682a0 pid: 51803 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 51803, cores: 2)
+spawned uWSGI worker 2 (pid: 51804, cores: 2)
+spawned uWSGI worker 3 (pid: 51805, cores: 2)
+spawned uWSGI worker 4 (pid: 51806, cores: 2)
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/jungmin.sock removed.
+*** Starting uWSGI 2.0.26 (64bit) on [Tue Jun 18 16:26:41 2024] ***
+compiled with version: 11.4.0 on 18 June 2024 04:51:27
+os: Linux-5.15.146.1-microsoft-standard-WSL2 #1 SMP Thu Jan 11 04:09:03 UTC 2024
+nodename: DESKTOP-OI1648D
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /home/min/nginx_study
+writing pidfile to ./uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31208
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/jungmin.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+Set PythonHome to /root/miniconda3/envs/flask
+Python main interpreter initialized at 0x5594431d02a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 333504 bytes (325 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5594431d02a0 pid: 52106 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 52106, cores: 2)
+spawned uWSGI worker 2 (pid: 52107, cores: 2)
+spawned uWSGI worker 3 (pid: 52108, cores: 2)
+spawned uWSGI worker 4 (pid: 52109, cores: 2)
+[pid: 52109|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1036 bytes} [Tue Jun 18 16:26:42 2024] GET / => generated 23 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/jungmin.sock removed.
+*** Starting uWSGI 2.0.26 (64bit) on [Tue Jun 18 16:27:31 2024] ***
+compiled with version: 11.4.0 on 18 June 2024 04:51:27
+os: Linux-5.15.146.1-microsoft-standard-WSL2 #1 SMP Thu Jan 11 04:09:03 UTC 2024
+nodename: DESKTOP-OI1648D
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /home/min/nginx_study
+writing pidfile to ./uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31208
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/jungmin.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+Set PythonHome to /root/miniconda3/envs/flask
+Python main interpreter initialized at 0x55db40e352a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 333504 bytes (325 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55db40e352a0 pid: 52318 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 52318, cores: 2)
+spawned uWSGI worker 2 (pid: 52320, cores: 2)
+spawned uWSGI worker 3 (pid: 52321, cores: 2)
+spawned uWSGI worker 4 (pid: 52322, cores: 2)
+[pid: 52318|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1036 bytes} [Tue Jun 18 16:30:56 2024] GET / => generated 23 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/jungmin.sock removed.
