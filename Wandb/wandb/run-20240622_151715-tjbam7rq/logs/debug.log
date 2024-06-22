@@ -1,0 +1,21 @@
+2024-06-22 15:17:15,357 INFO    MainThread:6076 [wandb_setup.py:_flush():76] Current SDK version is 0.17.2
+2024-06-22 15:17:15,358 INFO    MainThread:6076 [wandb_setup.py:_flush():76] Configure stats pid to 6076
+2024-06-22 15:17:15,358 INFO    MainThread:6076 [wandb_setup.py:_flush():76] Loading settings from C:\Users\ypd04\.config\wandb\settings
+2024-06-22 15:17:15,358 INFO    MainThread:6076 [wandb_setup.py:_flush():76] Loading settings from c:\LJM\MLOps_Study\Wandb\wandb\settings
+2024-06-22 15:17:15,358 INFO    MainThread:6076 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-22 15:17:15,358 INFO    MainThread:6076 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-22 15:17:15,358 INFO    MainThread:6076 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-06-22 15:17:15,358 INFO    MainThread:6076 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-22 15:17:15,359 INFO    MainThread:6076 [wandb_init.py:_log_setup():520] Logging user logs to c:\LJM\MLOps_Study\Wandb\wandb\run-20240622_151715-tjbam7rq\logs\debug.log
+2024-06-22 15:17:15,359 INFO    MainThread:6076 [wandb_init.py:_log_setup():521] Logging internal logs to c:\LJM\MLOps_Study\Wandb\wandb\run-20240622_151715-tjbam7rq\logs\debug-internal.log
+2024-06-22 15:17:15,359 INFO    MainThread:6076 [wandb_init.py:init():560] calling init triggers
+2024-06-22 15:17:15,359 INFO    MainThread:6076 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-06-22 15:17:15,359 INFO    MainThread:6076 [wandb_init.py:init():585] re-initializing run, found existing run on stack: zj9chxjl
+2024-06-22 15:17:15,363 INFO    MainThread:6076 [wandb_run.py:_finish():2109] finishing run jmlim2/MLOps_Interview_CIFAR10_Classification/zj9chxjl
+2024-06-22 15:17:15,365 ERROR   MainThread:6076 [jupyter.py:save_history():436] Run pip install nbformat to save notebook history
+2024-06-22 15:17:15,366 INFO    MainThread:6076 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-06-22 15:17:15,366 INFO    MainThread:6076 [wandb_init.py:_jupyter_teardown():448] cleaning up jupyter logic
+2024-06-22 15:17:15,366 INFO    MainThread:6076 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-06-22 15:17:15,367 INFO    MainThread:6076 [wandb_run.py:_restore():2332] restore
+2024-06-22 15:17:15,367 INFO    MainThread:6076 [wandb_run.py:_restore():2338] restore done

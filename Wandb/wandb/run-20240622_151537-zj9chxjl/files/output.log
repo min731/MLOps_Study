@@ -1,0 +1,2 @@
+Shape of X [N, C, H, W]: torch.Size([16, 1, 28, 28])
+Shape of y: torch.Size([16]) torch.int64
