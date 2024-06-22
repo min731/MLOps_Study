@@ -14,6 +14,6 @@
 - 24-06-20 : Pycaret(AutoML) 
 - 24-06-22 : Wandb
 
-📒 참고 강의 
+📒 참고 강의<br>
 https://www.youtube.com/watch?v=I9UCdp9ucQQ&list=PLRUS1nW-Cfnffl6oa8u1jzgiOyeTY_cCA&index=2
 https://www.youtube.com/watch?v=EAHcirh47hY&t=360s
