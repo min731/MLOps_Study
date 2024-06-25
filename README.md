@@ -13,6 +13,8 @@
 - 24-06-16 ~ 24-06-18 : Nginx - Gunicorn - Flask 연동 웹 서버 구축
 - 24-06-20 : Pycaret(AutoML) 
 - 24-06-22 : Wandb
+- 24-06-24 : Kubernetes (k8s)
+- 24-06-25 ~ ing : Kubeflow 
 
 📒 참고 강의<br>
 - https://www.youtube.com/watch?v=I9UCdp9ucQQ&list=PLRUS1nW-Cfnffl6oa8u1jzgiOyeTY_cCA&index=2
