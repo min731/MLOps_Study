@@ -19,3 +19,5 @@
 📒 참고 강의<br>
 - https://www.youtube.com/watch?v=I9UCdp9ucQQ&list=PLRUS1nW-Cfnffl6oa8u1jzgiOyeTY_cCA&index=2
 - https://www.youtube.com/watch?v=EAHcirh47hY&t=360s
+- https://www.youtube.com/watch?v=dkf_rYbANNg
+- https://www.youtube.com/watch?v=tDqatoU2fhM&list=PL6ZWs3MJaiphOwtHQvBCA4GNw-EPDely-&index=1
