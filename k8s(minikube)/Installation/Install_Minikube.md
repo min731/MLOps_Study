@@ -68,6 +68,9 @@ nvidia-container-cli info
 
 # Minikube 클러스터 시작 (2개 노드)
 minikube start -p jmlim-cluster --nodes 2 --driver=docker --container-runtime=docker
+kubectl label node jmlim-cluster-m02 node-role.kubernetes.io/control-plane-
+kubectl label node jmlim-cluster-m02 node-role.kubernetes.io/master-
+kubectl label node jmlim-cluster-m02 node-role.kubernetes.io/worker=worker
 
 # Minikube 상태 및 노드 확인
 minikube status -p jmlim-cluster
