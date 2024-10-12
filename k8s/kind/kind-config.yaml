@@ -1,27 +1,130 @@
-# kind 클러스터 설정 파일
+# # kind 클러스터 설정 파일
+# kind: Cluster
+# apiVersion: kind.x-k8s.io/v1alpha4
+
+# # 네트워킹 설정
+# networking:
+#   apiServerAddress: "0.0.0.0"  # API 서버가 모든 인터페이스에서 리스닝
+#   # apiServerPort: 6443  # API 서버 포트
+
+# # 노드 설정
+# nodes:
+# # 컨트롤 플레인 (마스터) 노드
+# - role: control-plane
+#   image: kindest/node:v1.26.15
+#   extraPortMappings:
+#   - containerPort: 6443  # Kubernetes API 서버
+#     hostPort: 6443
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   - containerPort: 80  # HTTP 트래픽 (Ingress)
+#     hostPort: 80
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   - containerPort: 443  # HTTPS 트래픽 (Ingress)
+#     hostPort: 443
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   kubeadmConfigPatches:
+#   - |
+#     kind: InitConfiguration
+#     nodeRegistration:
+#       kubeletExtraArgs:
+#         node-labels: "ingress-ready=true"  # Ingress 준비 레이블 추가
+
+# # 워커 노드
+# - role: worker
+#   image: kindest/node:v1.26.15
+#   extraPortMappings:
+#   - containerPort: 30000  # NodePort 서비스 범위 시작
+#     hostPort: 30000
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   - containerPort: 31000  # NodePort 서비스 추가 포트 예시
+#     hostPort: 31000
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+
+---
+# kind: Cluster
+# apiVersion: kind.x-k8s.io/v1alpha4
+
+# networking:
+#   apiServerAddress: "0.0.0.0"
+
+# nodes:
+# - role: control-plane
+#   image: kindest/node:v1.26.15
+#   extraPortMappings:
+#   - containerPort: 6443
+#     hostPort: 6443
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   - containerPort: 80
+#     hostPort: 80
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   - containerPort: 443
+#     hostPort: 443
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   kubeadmConfigPatches:
+#   - |
+#     kind: InitConfiguration
+#     nodeRegistration:
+#       kubeletExtraArgs:
+#         node-labels: "ingress-ready=true"
+
+# - role: worker
+#   image: kindest/node:v1.26.15
+#   extraPortMappings:
+#   - containerPort: 30000
+#     hostPort: 30000
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   - containerPort: 31000
+#     hostPort: 31000
+#     listenAddress: "0.0.0.0"
+#     protocol: TCP
+#   extraMounts:
+#   - hostPath: /dev/nvidia0
+#     containerPath: /dev/nvidia0
+#   - hostPath: /usr/lib/x86_64-linux-gnu/libnvidia-ml.so
+#     containerPath: /usr/lib/x86_64-linux-gnu/libnvidia-ml.so
+#   - hostPath: /usr/bin/nvidia-smi
+#     containerPath: /usr/bin/nvidia-smi
+#   kubeadmConfigPatches:
+#   - |
+#     kind: JoinConfiguration
+#     nodeRegistration:
+#       kubeletExtraArgs:
+#         node-labels: "nvidia.com/gpu=true"
+#         feature-gates: "DevicePlugins=true"
+#   - |
+#     kind: KubeletConfiguration
+#     featureGates:
+#       DevicePlugins: true
+---
+
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 
-# 네트워킹 설정
 networking:
-  apiServerAddress: "0.0.0.0"  # API 서버가 모든 인터페이스에서 리스닝
-  # apiServerPort: 6443  # API 서버 포트
+  apiServerAddress: "0.0.0.0"
 
-# 노드 설정
 nodes:
-# 컨트롤 플레인 (마스터) 노드
 - role: control-plane
-  image: kindest/node:v1.26.15
+  image: nvcr.io/nvidia/k8s-device-plugin:v1.26.15
   extraPortMappings:
-  - containerPort: 6443  # Kubernetes API 서버
+  - containerPort: 6443
     hostPort: 6443
     listenAddress: "0.0.0.0"
     protocol: TCP
-  - containerPort: 80  # HTTP 트래픽 (Ingress)
+  - containerPort: 80
     hostPort: 80
     listenAddress: "0.0.0.0"
     protocol: TCP
-  - containerPort: 443  # HTTPS 트래픽 (Ingress)
+  - containerPort: 443
     hostPort: 443
     listenAddress: "0.0.0.0"
     protocol: TCP
@@ -30,17 +133,34 @@ nodes:
     kind: InitConfiguration
     nodeRegistration:
       kubeletExtraArgs:
-        node-labels: "ingress-ready=true"  # Ingress 준비 레이블 추가
+        node-labels: "ingress-ready=true"
 
-# 워커 노드
 - role: worker
-  image: kindest/node:v1.26.15
+  image: nvcr.io/nvidia/k8s-device-plugin:v1.26.15
   extraPortMappings:
-  - containerPort: 30000  # NodePort 서비스 범위 시작
+  - containerPort: 30000
     hostPort: 30000
     listenAddress: "0.0.0.0"
     protocol: TCP
-  - containerPort: 31000  # NodePort 서비스 추가 포트 예시
+  - containerPort: 31000
     hostPort: 31000
     listenAddress: "0.0.0.0"
     protocol: TCP
+  extraMounts:
+  - hostPath: /dev/nvidia0
+    containerPath: /dev/nvidia0
+  - hostPath: /usr/lib/x86_64-linux-gnu/libnvidia-ml.so
+    containerPath: /usr/lib/x86_64-linux-gnu/libnvidia-ml.so
+  - hostPath: /usr/bin/nvidia-smi
+    containerPath: /usr/bin/nvidia-smi
+  kubeadmConfigPatches:
+  - |
+    kind: JoinConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-labels: "nvidia.com/gpu=true"
+        feature-gates: "DevicePlugins=true"
+  - |
+    kind: KubeletConfiguration
+    featureGates:
+      DevicePlugins: true
