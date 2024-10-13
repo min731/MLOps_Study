@@ -14,7 +14,11 @@
 - 24-06-20 : Pycaret(AutoML) 
 - 24-06-22 : Wandb
 - 24-06-24 : Kubernetes (k8s)
-- 24-06-25 ~ 24-06-26 : Kubeflow 
+- 24-06-25 ~ 24-06-26 : Kubeflow
+
+🔹 MLops 프로젝트 투입 후
+- 24-10-03 ~ 24-10-13 : Minikube 활용 GPU 클러스터 구축
+
 
 📒 참고 강의<br>
 - https://www.youtube.com/watch?v=I9UCdp9ucQQ&list=PLRUS1nW-Cfnffl6oa8u1jzgiOyeTY_cCA&index=2
