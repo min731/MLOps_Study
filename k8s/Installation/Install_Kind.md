@@ -1,4 +1,4 @@
-># Minikube 설치
+># Kind 설치
 
 [Kind 공식 문서 참고](https://kind.sigs.k8s.io/docs/user/quick-start/#installing-with-go-install)를 참고 하였습니다.
 
