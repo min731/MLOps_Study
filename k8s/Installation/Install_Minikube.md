@@ -131,18 +131,86 @@ minikube logs -p jmlim-cluster
 minikube logs -p jmlim-cluster -n jmlim-cluster-m02
 ```
 
-### 7. 애드온 활성화
+### 7. 애드온 활성화 (*클러스터 지정)
 
 ```bash
-minikube addons enable dashboard
-minikube addons enable ingress
-minikube addons enable ingress-dns
-minikube addons enable istio
+minikube addons enable dashboard -p jmlim-cluster
+minikube addons enable ingress -p jmlim-cluster
+minikube addons enable ingress-dns -p jmlim-cluster
+minikube addons enable istio -p jmlim-cluster
 # minikube addons enable istio-provisioner
-minikube addons enable kubeflow
-minikube addons enable metalb
-minikube addons enable metrics-server
-minikube addons enable nvidia-gpu-device-plugin
-minikube addons enable registry
-minikube addons enable storage-provisioner
+minikube addons enable kubeflow -p jmlim-cluster
+minikube addons enable metalb -p jmlim-cluster
+minikube addons enable metrics-server -p jmlim-cluster
+minikube addons enable nvidia-gpu-device-plugin -p jmlim-cluster
+minikube addons enable registry -p jmlim-cluster
+minikube addons enable storage-provisioner -p jmlim-cluster
+minikube addons enable volumesnapshots -p jmlim-cluster
+```
+
+### ETC. Docker Desktop 설치 삭제 후, Doker Engine을 Minikube Drive로 설정
+
+```bash
+#!/bin/bash
+
+# Docker Engine 설치 (이미 설치되어 있다면 이 단계를 건너뛰세요)
+sudo apt-get update
+sudo apt-get install -y docker.io
+
+# 현재 사용자를 docker 그룹에 추가 (이미 추가되어 있다면 이 단계를 건너뛰세요)
+sudo usermod -aG docker $USER
+
+# Docker 서비스 시작 및 부팅 시 자동 시작 설정
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Docker 컨텍스트 확인 및 설정
+docker context ls
+docker context use default
+
+# Docker Desktop 관련 컨텍스트가 있다면 제거
+docker context rm desktop-linux 2>/dev/null || true
+
+# ~/.docker/config.json 파일 수정
+# 주의: 이 명령은 기존 config.json 파일을 덮어씁니다.
+cat << EOF > ~/.docker/config.json
+{
+    "auths": {},
+    "plugins": {
+        "debug": {"hooks": "exec"},
+        "scout": {"hooks": "pull,buildx build"}
+    },
+    "features": {"hooks": "true"}
+}
+EOF
+
+# DOCKER_HOST 환경 변수 설정
+echo 'export DOCKER_HOST=unix:///var/run/docker.sock' >> ~/.bashrc
+source ~/.bashrc
+
+# Docker 서비스 재시작
+sudo systemctl restart docker
+
+# Minikube 설치 (이미 설치되어 있다면 이 단계를 건너뛰세요)
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+# Minikube 드라이버를 Docker로 설정
+minikube config set driver docker
+
+# 변경사항 적용을 위해 새 셸 세션 시작
+exec $SHELL
+
+# Minikube 클러스터 시작
+minikube start -p my-cluster
+
+# Minikube 상태 확인
+minikube status -p my-cluster
+
+# kubectl 설치 (이미 설치되어 있다면 이 단계를 건너뛰세요)
+sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
+# 노드 상태 확인
+kubectl get nodes
 ```
