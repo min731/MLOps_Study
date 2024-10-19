@@ -137,15 +137,22 @@ minikube logs -p jmlim-cluster -n jmlim-cluster-m02
 minikube addons enable dashboard -p jmlim-cluster
 minikube addons enable ingress -p jmlim-cluster
 minikube addons enable ingress-dns -p jmlim-cluster
-minikube addons enable istio -p jmlim-cluster
+# minikube addons enable istio -p jmlim-cluster # 최소 4CPU, 메모리 8GB 필요
+# ❗  istio is a 3rd party addon and is not maintained or verified by minikube maintainers, enable at your own risk.
+# ❗  istio does not currently have an associated maintainer.
+# ❗  Istio needs 8192MB of memory -- your configuration only allocates 2200MB
+# ❗  Istio needs 4 CPUs -- your configuration only allocates 2 CPUs
 # minikube addons enable istio-provisioner
 minikube addons enable kubeflow -p jmlim-cluster
-minikube addons enable metalb -p jmlim-cluster
+minikube addons enable metallb -p jmlim-cluster
 minikube addons enable metrics-server -p jmlim-cluster
-minikube addons enable nvidia-gpu-device-plugin -p jmlim-cluster
+# minikube addons enable nvidia-gpu-device-plugin -p jmlim-cluster # KVM driver만 사용 가능
 minikube addons enable registry -p jmlim-cluster
 minikube addons enable storage-provisioner -p jmlim-cluster
 minikube addons enable volumesnapshots -p jmlim-cluster
+```
+```bash
+minikube addons list -p jmlim-cluster
 ```
 
 ### ETC. Docker Desktop 설치 삭제 후, Doker Engine을 Minikube Drive로 설정
