@@ -17,7 +17,8 @@
 - 24-06-25 ~ 24-06-26 : Kubeflow
 
 🔹 MLops 프로젝트 투입 후
-- 24-10-03 ~ 24-10-13 : Minikube 활용 GPU 클러스터 구축
+- 24.07.07 ~ 24.07.26 : Udemy Docker&Kubernetes 강의 완강 [Docker Kubernetes Study Repository](https://github.com/min731/Docker_Kubernetes_Study)
+- 24-10-03 ~ 24-10-13 : Minikube 활용 On-Premise GPU 클러스터 구축
 - 24.11.04 ~ 25.01.07 : Udemy Kubernetes DevOps 강의 완강 [DevOps Study Repository](https://github.com/min731/DevOps_Study)
 
 📒 참고 강의<br>
