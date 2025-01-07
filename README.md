@@ -17,12 +17,14 @@
 - 24-06-25 ~ 24-06-26 : Kubeflow
 
 🔹 MLops 프로젝트 투입 후
-- 24.07.07 ~ 24.07.26 : Udemy Docker&Kubernetes 강의 완강 [Docker Kubernetes Study Repository](https://github.com/min731/Docker_Kubernetes_Study)
+- 24-07-07 ~ 24-07-26 : Udemy Docker&Kubernetes 강의 완강 [Docker Kubernetes Study Repository](https://github.com/min731/Docker_Kubernetes_Study)
 - 24-10-03 ~ 24-10-13 : Minikube 활용 On-Premise GPU 클러스터 구축
-- 24.11.04 ~ 25.01.07 : Udemy Kubernetes DevOps 강의 완강 [DevOps Study Repository](https://github.com/min731/DevOps_Study)
+- 24-11-04 ~ 25-01-07 : Udemy Kubernetes DevOps 강의 완강 [DevOps Study Repository](https://github.com/min731/DevOps_Study)
 
 📒 참고 강의<br>
 - https://www.youtube.com/watch?v=I9UCdp9ucQQ&list=PLRUS1nW-Cfnffl6oa8u1jzgiOyeTY_cCA&index=2
 - https://www.youtube.com/watch?v=EAHcirh47hY&t=360s
 - https://www.youtube.com/watch?v=dkf_rYbANNg
 - https://www.youtube.com/watch?v=tDqatoU2fhM&list=PL6ZWs3MJaiphOwtHQvBCA4GNw-EPDely-&index=1
+- https://www.udemy.com/course/docker-kubernetes-2022/?couponCode=ST21MT60724
+- https://www.udemy.com/course/best-devops/
