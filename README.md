@@ -18,7 +18,7 @@
 
 🔹 MLops 프로젝트 투입 후
 - 24-10-03 ~ 24-10-13 : Minikube 활용 GPU 클러스터 구축
-
+- 24.11.04 ~ 25.01.07 : Udemy Kubernetes DevOps 강의 완강 [DevOps Study Repository](https://github.com/min731/DevOps_Study)
 
 📒 참고 강의<br>
 - https://www.youtube.com/watch?v=I9UCdp9ucQQ&list=PLRUS1nW-Cfnffl6oa8u1jzgiOyeTY_cCA&index=2
