@@ -20,7 +20,7 @@
 - 24-07-07 ~ 24-07-26 : Udemy Docker&Kubernetes 강의 완강 [Docker Kubernetes Study Repository](https://github.com/min731/Docker_Kubernetes_Study)
 - 24-10-03 ~ 24-10-13 : Minikube 활용 On-Premise GPU 클러스터 구축
 - 24-11-04 ~ 25-01-07 : Udemy Kubernetes DevOps 강의 완강 [DevOps Study Repository](https://github.com/min731/DevOps_Study)
-
+- 25-03-08 ~ 25-03-13 : Kserve 소개 / 설치 / Torchserve 배포 [Model Serving/Kserve](https://min731.github.io/categories/model-serving/)
 📒 참고 강의<br>
 - https://www.youtube.com/watch?v=I9UCdp9ucQQ&list=PLRUS1nW-Cfnffl6oa8u1jzgiOyeTY_cCA&index=2
 - https://www.youtube.com/watch?v=EAHcirh47hY&t=360s
